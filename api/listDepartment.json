@@ -1,0 +1,29 @@
+[
+    {
+        "request": {
+            "url": "/rest/department/list",
+            "method": "get"
+        },
+        "response": {
+            "code": 200,
+            "delay": 100,
+            "body": {
+                
+             "DepartmentI": [
+    {
+        "departmentId":"1 ",
+        "companieId":"1",
+        "name": "RH"
+        
+    },
+    {
+        "departmentId":"2",
+        "companieId":"2",,
+        "name": "programmation"
+        
+    }
+]
+            }
+        }
+    }
+]

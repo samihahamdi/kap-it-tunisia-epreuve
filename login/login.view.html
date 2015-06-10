@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html >
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Directory Login </title>
+    <link rel="stylesheet" href="../resources/login.css" type="text/css" />
+    <script type="text/javascript" src="../login/loginController.js"></script>
+    
+</head>
+
+<body>
+
+ <div class="conteneur">
+
+        <div class="loginheader">
+            <div class="logo">
+                <img src="../resources/img/logo.png" />
+            </div>
+        </div>
+<div ng_controller="loginController">
+        <div class="loginboxinner radius">
+
+            <div class="loginform" >
+
+                <form id="login" action="login()" method="post">
+                    <p>
+                        <label for="username">:Login</label>
+                        <input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+                    </p>
+                    <p>
+                        <label for="password">:Password</label>
+                        <input type="password" id="password" name="password" ng-model="login.password" class="radius2" required />
+                    </p>
+
+                    <p>
+                        <label></label>
+                        <input type="checkbox" /> Remember me
+                    </p>
+
+
+                    <p>
+                        <input type="submit" class="radius title" value="Log in" ng_click="login()">
+                    </p>
+                </form>
+            </div>
+            <!--loginform-->
+        </div>
+        <!--loginboxinner-->
+
+        <a href="">Forget your password? <span class="gras" >Request a new one.</span></a>
+</div>
+    </div>
+ 
+</body>
+
+</html>

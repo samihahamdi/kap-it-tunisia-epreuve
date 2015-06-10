@@ -1,0 +1,29 @@
+[
+    {
+        "request": {
+            "url": "/rest/companie/list",
+            "method": "get"
+        },
+        "response": {
+            "code": 200,
+            "delay": 100,
+            "body": {
+                
+             "companies": [
+    {
+        "companieId":"1 ",
+        "name": "kap-it-tunisia",
+        "adresse": "Kap IT Tunisia Rue Ghar el Melh Tunis",
+        "fonctionalite": "developpement informatique"
+    },
+    {
+        "companieId":"2",
+        "name": "tunisie telecom",
+        "adresse": "ariana tunis",
+        "fonctionalite": "telecomunication"
+    }
+]
+            }
+        }
+    }
+]

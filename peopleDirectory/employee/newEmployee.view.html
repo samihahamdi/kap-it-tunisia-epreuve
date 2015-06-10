@@ -1,0 +1,46 @@
+
+
+<div class="row">
+  
+  <div class=" Personnal informations">
+ Personnal informations:<br />
+ 
+   <label for="name" class="col-xs-5 control-label" >Name:</label>
+   <input type="text" name="name"  ng-model="employee.name" required><br />
+   <label for="email" class="col-xs-5 control-label">email:</label>
+   <input type="email" name="email" ng-model="employee.email"required> <br />
+   <label for="phone" class="col-xs-5 control-label">Phone:</label>
+   <input type="tel" name="phone" ng-model="employee.phone" required> <br />
+ <label for="celPhone" class="col-xs-5 control-label">CelPhone:</label>
+   <input type="text" name="celPhone" ng-model="employee.CelPhone" required> <br />
+  <label for="location" class="col-xs-5 control-label">Location:</label>
+  <input type="text" name="location" ng-model="employee.location" required> <br />
+  </div>
+  </div>
+  <div class="row">
+  Professionnal informations:<br />
+  
+  <label for="Title" class="col-xs-5 control-label" >Title:</label>
+   <input type="text" name="title"  ng-model="employee.title" required> <br />
+   <div name="companie" >
+    <label for="company" class="col-xs-5 control-label" >company:</label>
+     <select ng-repeat="companie in companies" ng-model="companie.companieId">
+     <option value="'' ">{{companie.name}}</option>
+     </select>
+     </div>
+      <div name="departement" >
+     <label for="departement" class="col-xs-5 control-label" >department:</label>
+     <select ng-repeat="department in Departments" ng-model="department.departmentId">
+     <option value="'' ">{{department.name}}</option>
+     </select>
+   
+    </div>       
+   <label for="start date" class="col-xs-5 control-label" >start date:</label>
+   <input type="date" name="startDate"  ng-model="employee.startDate" required> <br />
+   <label for="end date" class="col-xs-5 control-label" >end date:</label>
+   <input type="date" name="name"  ng-model="employee.endDate" required><br />
+   
+   </div>
+   <button type="submit" ng-click="saveEmployee(employee)" class="btn btn-success">ok </button>
+  
+  

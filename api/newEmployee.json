@@ -1,0 +1,60 @@
+
+[
+	
+	{
+		"request": {
+			"url": "/employee/new",
+			"method": "post"
+		},
+		"response": {
+			"code":201,
+			"body": {}
+		},
+		"afterResponse": {
+			"endpoints": [
+				{
+					"request": {
+						"url": "/employee/new",
+						"method": "get"
+					},
+					"response": {
+						"code":200,
+						"body": {
+							"employees": [
+								{
+									"id":1,
+									"name":"samiha.Hamdi"
+									"email":"samihahamdi14@gmail.com",
+									"phone":"24960770",
+									"CelPhone":"+216 5678956789",
+									"location":"tunis",
+									"title":"computer engineer ",
+									"companyId":"1",
+									"departmentId":"1",
+									"startDate":"10062015",
+									"endDate":""
+									
+									
+								},
+								{
+									"id":2,
+									"name":"test"
+									"email":"test@gmail.com",
+									"phone":"12345678",
+									"CelPhone":"12345678",
+									"location":"france",
+									"title":"computer engineer",
+									"companyId":"2",
+									"departmentId":"1",
+									"startDate":"03022010",
+									"endDate":"11012015"
+									
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+	}
+]
