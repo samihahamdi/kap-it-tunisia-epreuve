@@ -1,6 +1,6 @@
-
+'use strict';
 //***************************** Controlleur EmployeeListCtrl 
-kapItCtrlsModule.controller('EmployeeListCtrl',
+kapItapp.controller('EmployeeListCtrl',
     function ($scope, $timeout,$routeParams, $resource,$http,$modal,$log, EmployeeService ) {
         $scope.rawEmployees = [];
         $scope.employee.departmentId = $routeParams.departmentId;

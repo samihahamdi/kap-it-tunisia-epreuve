@@ -1,6 +1,6 @@
-
+'use strict';
 //***************************** Controlleur CompaniesListCtrl : view :home/view.html
-kapItCtrlsModule.controller('DepartementListCtrl',
+kapItApp.controller('DepartementListCtrl',
     function ($scope, $timeout,$routeParams,$http,$modal, $log,DepartementService ) {
 	$scope.employee.companieId = $routeParams.companieId;
         $scope.rawDepartements = [];

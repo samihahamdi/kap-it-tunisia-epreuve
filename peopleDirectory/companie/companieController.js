@@ -1,6 +1,6 @@
-
+'use strict';
 //***************************** Controlleur CompaniesListCtrl : view :home/view.html
-kapItCtrlsModule.controller('CompaniesListCtrl',
+kapItApp.controller('CompaniesListCtrl',
     function ($scope, $timeout,$routeParams, $resource,$http,$modal,$log,CompaniesService ) {
         $scope.rawCompanies = [];
 

@@ -1,12 +1,6 @@
-
-var kapItServicesModule = angular.module('kapItServicesModule', []);
-var kapItCtrlsModule= angular.module('kapItCtrlsModule', ['kapItServicesModule','ngTable']);
-
-
-var kapItApp = angular.module('kapItApp', ['ngRoute', 'kapItServicesModule', 'kapItCtrlsModule', 'ui.bootstrap',
-                                           'ngAnimate']);
-
-kapItApp.config(function ($routeProvider, $animateProvider, $httpProvider, $locationProvider) {
+'use strict';
+var kapItApp= angular.module('kapItApp', ['ngResource']);
+kapItApp.config(function ($routeProvider) {
     
     $routeProvider.
    when('/home', {
@@ -26,7 +20,5 @@ kapItApp.config(function ($routeProvider, $animateProvider, $httpProvider, $loca
                 controller: 'DepartementListCtrl'}).
     when('/companie/list', {
         templateUrl: 'peopleDirectory/companie/listCompanie.view.html',
-        controller: 'CompaniesListCtrl'}). otherwise({
-            redirectTo: '/'
-        });
+        controller: 'CompaniesListCtrl'});
  });

@@ -1,6 +1,5 @@
 'use strict';
-
-var kapItServicesModule= angular.module('kapItServicesModule', [ 'ngResource' ])
+kapItApp 
 .factory('AuthenticationService',
     function ($resource) {
         return $resource('/rest/login/:id', {}, {});}).
