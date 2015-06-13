@@ -170,14 +170,14 @@ margin: 10px;
     padding: 4px 2px 0px 30px;
 }
 
-.btAdd {
+.my_popup_open {
     border-radius: 5px;
     background: #fff;
     display: inline;
     height: 30px;
 }
 
-.btAdd span {
+.my_popup_open span {
     display: inline-block;
     height: 22px;
     background: url('img/add.png') 3px 5px no-repeat;
@@ -207,3 +207,45 @@ margin: 10px;
 	line-height:2em;
 	margin-left: 10px;
 }	
+
+#slide_background {
+  transition: all 0.3s 0.3s;
+}
+
+#slide, #slide_wrapper {
+  transition: all 0.3s ease-out;
+}
+
+#slide {
+  transform: translateX(0) translateY(-40%);
+}
+
+.popup_visible #slide {
+  transform: translateX(0) translateY(0);
+}
+
+#formulaireContener{
+	height:380px; 
+	width:700px; 
+	margin:0 auto; 
+	position:relative;
+	background: #fff;
+	border: 8px solid #e6e6e6;
+}
+
+#formulaireContener .row{
+ 	width: 45%;
+  	float: left;
+  	background-color: #f7f7f7; 
+  	margin:5px;
+  	border-radius: 5px;
+}
+
+.conteneur input {
+    padding: 12px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+}

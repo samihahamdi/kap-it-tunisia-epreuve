@@ -71,7 +71,7 @@
   				
   				<input type="search" placeholder="search an employee" name="the_search" id="employee">
   				<div id="separation"> </div>
-					<button class="btAdd" name="btAdd" type="submit" title="Add"  onClick="open('employee/newEmployee.view.html', 'Popup', 'scrollbars=1,resizable=1,height=200,width=300')"  >
+					<button class="my_popup_open" >
 					
 						<span>New</span>
 					</button>
@@ -96,8 +96,92 @@
 </div>
 
 
+  <!-- Add content to the popup -->
+  <div id="my_popup">
 
-</script>
+    	<div id="formulaireContener">
+
+
+				<div class="row">
+				  
+				 	Personnal informations:<br />
+				 
+					    <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+
+						 <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+
+						 <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+
+						 <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+
+						 <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+
+					</div>
+  <!-- ************************** Kameel nadem raw row hadi  *******************	-->			
+
+  				<div class="row">
+  					Professionnal informations:<br />
+  
+   <p>
+							<label for="username">Login:</label>
+							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
+						</p>
+    <label for="company" class="col-xs-5 control-label" >company:</label>
+     <select ng-repeat="companie in companies" ng-model="companie.companieId">
+     <option value="'' ">{{companie.name}}</option>
+     </select>
+     </div>
+      <div name="departement" >
+     <label for="departement" class="col-xs-5 control-label" >department:</label>
+     <select ng-repeat="department in Departments" ng-model="department.departmentId">
+     <option value="'' ">{{department.name}}</option>
+     </select>
+   
+    </div>       
+   <label for="start date" class="col-xs-5 control-label" >start date:</label>
+   <input type="date" name="startDate"  ng-model="employee.startDate" required> <br />
+   <label for="end date" class="col-xs-5 control-label" >end date:</label>
+   <input type="date" name="name"  ng-model="employee.endDate" required><br />
+   
+   </div>
+   <button type="submit" ng-click="saveEmployee(employee)" class="btn btn-success">ok </button>
+  
+  
+
+    </div>
+
+  
+
+  <!-- Include jQuery -->
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+
+  <!-- Include jQuery Popup Overlay -->
+  <script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+
+  <script>
+    $(document).ready(function() {
+
+      // Initialize the plugin
+      $('#my_popup').popup();
+
+    });
+  </script>
+
 </body>
 
 </html>

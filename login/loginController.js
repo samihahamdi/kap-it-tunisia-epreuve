@@ -1,7 +1,7 @@
 
 	  // angular module or controller definition goes here
 	  
-	  
+	  'use strict';
 	  
 	  kapItApp .controller('loginController', function ($scope,  $location,$http ) {
 
