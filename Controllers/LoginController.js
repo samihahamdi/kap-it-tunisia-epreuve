@@ -1,9 +1,7 @@
 
 	  // angular module or controller definition goes here
-	  
-	  'use strict';
-	  
-	  kapItApp .controller('loginController', function ($scope,  $location,$http ) {
+	    'use strict';
+	   KapItApp.controller('LoginController', function ($scope,  $location,$http ) {
 
 	      $scope.login = function () {
 	          $scope.username = this.username;
@@ -19,4 +17,4 @@
 	  );
 
 	  
-	  
+	

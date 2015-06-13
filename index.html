@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="kapItApp">
+<html lang="fr" ng_app="KapItApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,24 +8,25 @@
 
  </head>
 
-<body>
-<script language="javascript">
-    window.location.href = "login/login.view.html";
+<body ng_controller="">
+<!--script lang="javascript">
+    window.location.href = "Views/login.view.html#/";
 </script>
- 
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 
+<script  src="lib/angular/angular.js"></script>
+<script  src="lib/angular/angular-resource.js"></script>
+<script  src="lib/angular/angular-route.js"></script>
+<script  src="lib/angular/ng-table.js"></script>
+<script  src="ng-app.js"></script>
+<script  src="ng-Kap-it-services.js"></script>
+<script  src="Controllers/LoginController.js"></script>
 
-<script src="lib/angular/angular.js"></script>
-<script src="lib/angular/angular-resource.js"></script>
-<script type="text/javascript" src="ng-app.js"></script>
-<script type="text/javascript" src="login/loginController.js"></script>
-<script type="text/javascript" src="companie/companieController.js"></script>
-<script type="text/javascript" src="employee/employeeController.js"></script>
-<script type="text/javascript" src="home/homeController.js"></script>
-<script type="text/javascript" src="peopleDirectory/peopleDirectoryController.js"></script>
-<script type="text/javascript" src="ng-kap-it-services.js"></script>
-</body>
+<script  src="Controllers/homeController.js"></script>
+<script  src="Controllers/peopleDirectoryController.js"></script>
+
+</body  >
+
+
 </html>

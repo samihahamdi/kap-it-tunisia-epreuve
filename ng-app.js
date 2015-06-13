@@ -1,33 +1,51 @@
+
 'use strict';
-var kapItApp= angular.module('kapItApp', ['ngResource']);
 
+var KapItApp = angular.module('KapItApp', ['ngResource'])
 
-kapItApp.config(function ($routeProvider) {
+.config(function ($routeProvider) {
 	
 $routeProvider.
 
+
+   when('/', {
+	      controller: 'LoginController',
+           templateUrl: 'Views/login.view.html'
+           
+   	 }).
+
       when('/home', {
-            templateUrl: 'home/home.view.html',
-            controller: 'homeController' 
+    	  controller: 'homeController' ,
+            templateUrl: 'Views/home.view.html'
+           
             	}).
-       when('/login', {
-             templateUrl: 'login/login.view.html',
-             controller: 'loginController'
-            	 }).
-       when('/employee/new', {
-             templateUrl: 'peopleDirectory/employee/newEmployee.view.html',
-             controller: 'EmployeeNewCtrl'
-            	 }).
-      when('/employee/getDepartementEmployee', {
-            templateUrl: 'peopleDirectory/employee/listEmployee.view.html',
-            controller: 'EmployeeListCtrl'
+       
+       
+      when('/peopleDirectory', {
+    	  controller: 'EmployeeListCtrl',
+            templateUrl: 'Views/peopleDirectory.view.html'
+           
             	}).
-      when('/departement/getCompanieDepartement', {
-             templateUrl: 'peopleDirectory/departement/listDepartement.view.html',
-              controller: 'DepartementListCtrl'
+      
+      when('/peopleDirectory/new', {
+              	  controller: 'EmployeeNewCtrl',
+                      templateUrl: 'Views/newEmployee.view.html'
+                     
+                      	}).
+      
+      when('/statistics', {
+    	  controller: 'statisticsController',
+             templateUrl: 'Views/statistics.view.html'
+             
             	  }).
+       when('/JobManager', {
+    	             controller: 'JobManagerComtoller',
+                      templateUrl: 'Views/jobManager.view.html'
+                       
+                     	  }).
       when('/companie/list', {
-            templateUrl: 'peopleDirectory/companie/listCompanie.view.html',
-            controller: 'CompaniesListCtrl'
+    	     controller: 'CompaniesListCtrl',
+            templateUrl: 'Views/listCompanie.view.html'
+           
             	});
  });

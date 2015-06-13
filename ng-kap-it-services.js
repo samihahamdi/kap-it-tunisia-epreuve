@@ -1,5 +1,5 @@
 'use strict';
-kapItApp 
+KapItApp
 .factory('AuthenticationService',
     function ($resource) {
         return $resource('/rest/login/:id', {}, {});}).
@@ -14,4 +14,5 @@ kapItApp
 	        return $resource('/rest/departement/:id', {}, {});})
 .factory('EmployeeService',
 	    function ($resource) {
-	        return $resource('/rest/employee/:id', {}, {});});
+	        return $resource('/rest/employee/:id', {}, {});
+	        });

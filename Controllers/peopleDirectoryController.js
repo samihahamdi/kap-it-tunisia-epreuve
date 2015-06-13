@@ -1,6 +1,6 @@
 'use strict';
 //***************************** Controlleur EmployeeListCtrl 
-kapItapp.controller('EmployeeListCtrl',
+KapItApp.controller('EmployeeListCtrl',
     function ($scope, $timeout,$routeParams, $resource,$http,$modal,$log, EmployeeService ) {
         $scope.rawEmployees = [];
         $scope.employee.departmentId = $routeParams.departmentId;
@@ -43,9 +43,9 @@ $scope.DeleteEmployeeModal = function(employee) {
     });
 
 
-//*****************************é Controlleur EmployeeNewCtrl : 
+//***************************** Controlleur EmployeeNewCtrl : 
 
-kapItCtrlsModule.controller('EmployeeNewCtrl', function ($scope, $routeParams,$upload,$http,$filter, $location,EmployeeService) {
+kapItApp.controller('EmployeeNewCtrl', function ($scope, $routeParams,$http, $location,EmployeeService) {
 	//recupérer le companie par son id afin de récupérer ses departements
 	$scope.employee = {};
 	 $scope.Departements= {};
