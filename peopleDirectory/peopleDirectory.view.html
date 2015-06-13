@@ -137,41 +137,53 @@
   				<div class="row">
   					Professionnal informations:<br />
   
-   <p>
+                       <p>
 							<label for="username">Login:</label>
 							<input type="text" id="username" name="username" ng-model="login.username" class="radius2" required />
-						</p>
-    <label for="company" class="col-xs-5 control-label" >company:</label>
-     <select ng-repeat="companie in companies" ng-model="companie.companieId">
-     <option value="'' ">{{companie.name}}</option>
-     </select>
-     </div>
-      <div name="departement" >
-     <label for="departement" class="col-xs-5 control-label" >department:</label>
-     <select ng-repeat="department in Departments" ng-model="department.departmentId">
-     <option value="'' ">{{department.name}}</option>
-     </select>
+					  </p>
+					   <p>
+					  
+                            <label for="company"  >company:</label>
+                            <select ng-repeat="companie in companies" ng-model="companie.companieId">
+                            <option value="'' ">{{companie.name}}</option>
+                            </select>
+                        </p>
+     
+                         <p>
+                            <label for="departement">department:</label>
+                            <select ng-repeat="department in Departments" ng-model="department.departmentId">
+                            <option value="'' ">{{department.name}}</option>
+                            </select>
+                         </p>
+     
+                         <p>  
+                           <label for="start date"  >start date:</label>
+                           <input type="date" name="startDate"  ng-model="employee.startDate" required> <br />
+                         </p>
+                          <p>
    
-    </div>       
-   <label for="start date" class="col-xs-5 control-label" >start date:</label>
-   <input type="date" name="startDate"  ng-model="employee.startDate" required> <br />
-   <label for="end date" class="col-xs-5 control-label" >end date:</label>
-   <input type="date" name="name"  ng-model="employee.endDate" required><br />
-   
-   </div>
-   <button type="submit" ng-click="saveEmployee(employee)" class="btn btn-success">ok </button>
+                           <label for="end date"  >end date:</label>
+                           <input type="date" name="name"  ng-model="employee.endDate" required><br />
+                           
+                            </p>
   
+                            <p>
+                            
+                             <button type="submit" ng-click="saveEmployee(employee)" class="btn btn-success">ok </button>
+                            
+                             </p>
   
 
     </div>
-
+</div>
+</div>
   
 
   <!-- Include jQuery -->
-  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="../lib/jquery-1.10.2.js"></script>
 
   <!-- Include jQuery Popup Overlay -->
-  <script src="http://vast-engineering.github.io/jquery-popup-overlay/jquery.popupoverlay.js"></script>
+ <script src="../lib/jquery.popupoverlay.js"></script>
 
   <script>
     $(document).ready(function() {
